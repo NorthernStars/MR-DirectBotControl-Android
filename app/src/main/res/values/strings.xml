@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DirectBotControl</string>
+    <string name="action_close">Close</string>
+    <string name="network_disconnect">Disconnect</string>
+    <string name="network_connect">Connect</string>
+    <string name="right_start_value">0</string>
+    <string name="left_start_value">0</string>
+    <string name="network_ip_address_info">IP Adresse</string>
+    <string name="network_ip_address_default">192.168.0.105</string>
+    <string name="network_port_info">Port</string>
+    <string name="network_port_default">3311</string>
+    <string name="bot_name_info">Name</string>
+    <string name="bot_name_default">Wurst</string>
+    <string name="bot_vt_info">Vt ID</string>
+    <string name="bot_vt_default">13</string>
+    <string name="bot_rc_info">Rc Id</string>
+    <string name="bot_rc_default">13</string>
+</resources>

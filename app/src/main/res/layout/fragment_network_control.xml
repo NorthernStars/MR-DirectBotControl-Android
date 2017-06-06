@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="northernstars.directbotcontrol.DirectControl$NetworkFragment">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/eTNetworkIP"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:enabled="true"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:hint="@string/network_ip_address_info"
+        android:text="@string/network_ip_address_default" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/eTNetworkPort"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="number"
+        android:clickable="true"
+        android:hint="@string/network_port_info"
+        android:text="@string/network_port_default" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/eTNetworkName"
+        android:enabled="true"
+        android:hint="@string/bot_name_info"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:text="@string/bot_name_default" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/eTNetworkVTID"
+            android:enabled="true"
+            android:hint="@string/bot_vt_info"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:text="@string/bot_vt_default" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/eTNetworkRCID"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:enabled="true"
+            android:hint="@string/bot_rc_info"
+            android:layout_weight="0.5"
+            android:text="@string/bot_rc_default" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_connect"
+        android:id="@+id/bNetworkConnect"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:tag="0"
+        android:onClick="connectToNetwork" />
+</LinearLayout>

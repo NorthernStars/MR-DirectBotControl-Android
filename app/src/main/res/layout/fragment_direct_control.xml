@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="northernstars.directbotcontrol.DirectControl$DirectControlFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sBDirectControlLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:max="200"
+            android:progress="100"
+            android:layout_weight="0.9"
+            android:thumbOffset="20dip"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.70">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/left_start_value"
+                android:id="@+id/tVDirectControlLeftValue"
+                android:layout_gravity="left"
+                android:layout_weight="0.1"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="#f77373"
+                android:enabled="true"
+                android:gravity="left"
+                android:minWidth="50dp" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/right_start_value"
+                android:id="@+id/tVDirectControlRightValue"
+                android:layout_gravity="right"
+                android:layout_weight="0.1"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="#f77373"
+                android:enabled="true"
+                android:minWidth="50dp"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <android.widget.JoystickView
+            android:id="@+id/sBDirectControlJoystick"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:max="200"
+            android:progress="100"
+            android:layout_weight="0.9"
+            android:thumbOffset="20dip"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sBDirectControlRight"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:max="200"
+            android:progress="100"
+            android:layout_weight="0.9"
+            android:thumbOffset="20dip"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+</LinearLayout>
